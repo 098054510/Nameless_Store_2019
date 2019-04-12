@@ -181,5 +181,10 @@ namespace Nameless_Store_2019.Controllers
         {
             return View();
         }
+
+        public ActionResult Finish_purchase_order()
+        {
+            return View();
+        }
     }
 }

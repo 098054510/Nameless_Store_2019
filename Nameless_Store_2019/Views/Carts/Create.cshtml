@@ -1,18 +1,15 @@
 ﻿@model MvcCart.Models.Cart
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Cart";
 }
-
-<h2>Create</h2>
-
-
-@using (Html.BeginForm()) 
+<h1>Enter the product Data</h1>
+<h2>To add the product to your cart, enter the product data (product name and price)</h2>
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>Cart</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -42,7 +39,7 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
+<img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
