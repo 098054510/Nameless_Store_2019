@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Nameless_Store_2019.Controllers
+namespace MvcEmail.Controllers
 {
     public class HomeController : Controller
     {
@@ -182,9 +182,5 @@ namespace Nameless_Store_2019.Controllers
             return View();
         }
 
-        public ActionResult Finish_purchase_order()
-        {
-            return View();
-        }
     }
 }

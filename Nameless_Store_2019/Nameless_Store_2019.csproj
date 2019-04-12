@@ -132,6 +132,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -204,7 +205,6 @@
     <Content Include="Views\Home\Supercharger_Page.cshtml" />
     <Content Include="Views\Home\Sport_Filtre_2E.cshtml" />
     <Content Include="Views\Home\Admission_Header.cshtml" />
-    <Content Include="Views\Home\Finish_purchase_order.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Nameless_Store_2019
+namespace MvcEmail
 {
     public class BundleConfig
     {

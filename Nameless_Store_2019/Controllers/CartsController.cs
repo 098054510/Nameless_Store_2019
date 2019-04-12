@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MvcCart.Models;
 
-namespace Nameless_Store_2019.Controllers
+namespace MvcEmail.Controllers
 {
     public class CartsController : Controller
     {

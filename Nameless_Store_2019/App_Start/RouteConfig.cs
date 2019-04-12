@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Nameless_Store_2019
+namespace MvcEmail
 {
     public class RouteConfig
     {

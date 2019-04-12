@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Nameless_Store_2019
+namespace MvcEmail
 {
     public class FilterConfig
     {
