@@ -175,6 +175,35 @@
     <Content Include="Views\Carts\Details.cshtml" />
     <Content Include="Views\Carts\Edit.cshtml" />
     <Content Include="Views\Carts\Index.cshtml" />
+    <Content Include="Views\Home\Brands.cshtml" />
+    <Content Include="Views\Home\Volkswagen_cars.cshtml" />
+    <Content Include="Views\Home\General_Motors_cars.cshtml" />
+    <Content Include="Views\Home\Gol_1.cshtml" />
+    <Content Include="Views\Home\Thanks_for_your_Purchase.cshtml" />
+    <Content Include="Views\Home\Passat_LSE.cshtml" />
+    <Content Include="Views\Home\Gol_GTS_92.cshtml" />
+    <Content Include="Views\Home\Golf_GTI.cshtml" />
+    <Content Include="Views\Home\Jetta_TSI.cshtml" />
+    <Content Include="Views\Home\Passat_VR6.cshtml" />
+    <Content Include="Views\Home\Chevette_DL.cshtml" />
+    <Content Include="Views\Home\Chevy_500.cshtml" />
+    <Content Include="Views\Home\Omega_Suprema.cshtml" />
+    <Content Include="Views\Home\Gol_Promo.cshtml" />
+    <Content Include="Views\Home\Omega_Promo.cshtml" />
+    <Content Include="Views\Home\Performance_Parts.cshtml" />
+    <Content Include="Views\Home\Full_Kit_Turbo.cshtml" />
+    <Content Include="Views\Home\Kit_Turbo_C41GE_4C.cshtml" />
+    <Content Include="Views\Home\Thanks_For_purchase_Kit.cshtml" />
+    <Content Include="Views\Home\Kit_Turbo_AP_carburetor.cshtml" />
+    <Content Include="Views\Home\Kit_To_GM_Familia_II_Engine.cshtml" />
+    <Content Include="Views\Home\Kit_Turbo_AP_Intercooler.cshtml" />
+    <Content Include="Views\Home\Turbo_Kit_Universal.cshtml" />
+    <Content Include="Views\Home\Kit_Turbo_AP_Injection.cshtml" />
+    <Content Include="Views\Home\Turbo_Kit_JDM.cshtml" />
+    <Content Include="Views\Home\Performance_Parts_Page.cshtml" />
+    <Content Include="Views\Home\Supercharger_Page.cshtml" />
+    <Content Include="Views\Home\Sport_Filtre_2E.cshtml" />
+    <Content Include="Views\Home\Admission_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
