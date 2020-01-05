@@ -211,6 +211,21 @@
     <Content Include="Views\Carts\Edit.cshtml" />
     <Content Include="Views\Carts\Index.cshtml" />
     <Content Include="Views\Wheels\Index.cshtml" />
+    <Content Include="Views\Wheels\BBS_CH.cshtml" />
+    <Content Include="Views\Wheels\CARBON_BERLIN.cshtml" />
+    <Content Include="Views\Wheels\MANHATTAN.cshtml" />
+    <Content Include="Views\Wheels\BBS_RS.cshtml" />
+    <Content Include="Views\Wheels\CARBON_CWB.cshtml" />
+    <Content Include="Views\Wheels\ENKEI_PDC.cshtml" />
+    <Content Include="Views\Wheels\ENKEI_RPF1_ZEUS.cshtml" />
+    <Content Include="Views\Wheels\KR_K66.cshtml" />
+    <Content Include="Views\Wheels\RACING_MAGNUM.cshtml" />
+    <Content Include="Views\Wheels\RACING_PRO_STAR.cshtml" />
+    <Content Include="Views\Wheels\ROTIFORM_CCV.cshtml" />
+    <Content Include="Views\Wheels\TE37_K57.cshtml" />
+    <Content Include="Views\Wheels\TSW_NURBURGRING.cshtml" />
+    <Content Include="Views\Wheels\ROTIFORM_LAS_R.cshtml" />
+    <Content Include="Views\Wheels\TURBOMAC.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
