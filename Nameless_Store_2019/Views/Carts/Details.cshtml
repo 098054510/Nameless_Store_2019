@@ -1,34 +1,43 @@
-﻿@model MvcCart.Models.Cart
+﻿@model Nameless_Store_2019.Cart
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Product Details";
 }
 
-<h2>Details</h2>
+<h1>_____________________________________________My Cart_____</h1>
 
 <div>
-    <h4>Cart</h4>
-    <hr />
+   <h4>Product Details</h4>
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Product)
-        </dt>
+        <h3>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </dt>
+        </h3>
+        <h1>
+            <dd>
+                @Html.DisplayFor(model => model.ProductName)
+            </dd>
+        </h1>
+    </dl>
 
-        <dd>
-            @Html.DisplayFor(model => model.Product)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
+    <dl class="dl-horizontal">
+        <h3>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductPrice)
+            </dt>
+        </h3>
+        <h1>
+            <dd>
+                R$ @Html.DisplayFor(model => model.ProductPrice)
+            </dd>
+        </h1>
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+<h2>
+    @Html.ActionLink("________________________________________Click Here to Back to My Cart____", "Index")
+</h2>
+<img src="~/images/My_cart.svg" alt="ASP.NET" class="img-responsive" />
+

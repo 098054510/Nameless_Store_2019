@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using MvcCart.Models;
+using Nameless_Store_2019;
 
-namespace MvcEmail.Controllers
+namespace Nameless_Store_2019.Controllers
 {
     public class CartsController : Controller
     {
@@ -17,7 +17,7 @@ namespace MvcEmail.Controllers
         // GET: Carts
         public ActionResult Index()
         {
-            return View(db.Cartss.ToList());
+            return View(db.Carts.ToList());
         }
 
         // GET: Carts/Details/5
@@ -27,7 +27,7 @@ namespace MvcEmail.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cart cart = db.Cartss.Find(id);
+            Cart cart = db.Carts.Find(id);
             if (cart == null)
             {
                 return HttpNotFound();
@@ -46,11 +46,11 @@ namespace MvcEmail.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Product,Price")] Cart cart)
+        public ActionResult Create([Bind(Include = "ID,ProductName,ProductPrice")] Cart cart)
         {
             if (ModelState.IsValid)
             {
-                db.Cartss.Add(cart);
+                db.Carts.Add(cart);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace MvcEmail.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cart cart = db.Cartss.Find(id);
+            Cart cart = db.Carts.Find(id);
             if (cart == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace MvcEmail.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Product,Price")] Cart cart)
+        public ActionResult Edit([Bind(Include = "ID,ProductName,ProductPrice")] Cart cart)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace MvcEmail.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cart cart = db.Cartss.Find(id);
+            Cart cart = db.Carts.Find(id);
             if (cart == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace MvcEmail.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Cart cart = db.Cartss.Find(id);
-            db.Cartss.Remove(cart);
+            Cart cart = db.Carts.Find(id);
+            db.Carts.Remove(cart);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

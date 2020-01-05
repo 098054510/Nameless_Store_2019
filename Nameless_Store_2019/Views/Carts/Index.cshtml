@@ -1,40 +1,29 @@
-﻿@model IEnumerable<MvcCart.Models.Cart>
+﻿@model IEnumerable<Nameless_Store_2019.Cart>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "My Cart";
 }
 
-<img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+<img src="~/images/My_cart.svg" alt="ASP.NET" class="img-responsive" />
+<img src="~/images/Product_Price.svg" alt="ASP.NET" class="img-responsive" />
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Product)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th></th>
-    </tr>
+<h3>
+    <table class="table col-lg-10">
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Product)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-            </td>
-        </tr>
-    }
-
-</table>
-<div class="row">
-    <div class="col-md-3">
-        <a class="btn btn-success" href="http://localhost:50157/Home/Thanks_for_your_Purchase">Finish purchase order</a>
-    </div>
-</div>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    R$ @Html.DisplayFor(modelItem => item.ProductPrice)
+                </td>
+                <td>
+                    @Html.ActionLink("Product Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Remove From Cart", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+    </table>
+</h3>

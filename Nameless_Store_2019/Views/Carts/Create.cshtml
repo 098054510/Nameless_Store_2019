@@ -1,43 +1,48 @@
-﻿@model MvcCart.Models.Cart
+﻿@model Nameless_Store_2019.Cart
 
 @{
-    ViewBag.Title = "Cart";
+    ViewBag.Title = "Add to Cart";
 }
-<h1>Enter the product Data</h1>
-<h2>To add the product to your cart, enter the product data (product name and price)</h2>
-<h3>Insert the maximum possible data on the product (In the case of a vehicle Enter the Year of manufacture).</h3>
-@using (Html.BeginForm())
+
+<h1>_____________________________________________My Cart_____</h1>
+<h2>Add to Cart</h2>
+
+
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-
+    
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.Product, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Product, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Product, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ProductPrice, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })R$ - BRL
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Add to cart" class="btn btn-info" />
+                <input type="submit" value="Add to Cart" class="btn btn-success" />
             </div>
         </div>
     </div>
 }
 
-<img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+<h2>
+    @Html.ActionLink("________________________________________Click Here to Back to My Cart____", "Index")
+</h2>
+
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
